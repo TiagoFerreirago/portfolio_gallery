@@ -1,0 +1,23 @@
+:root {
+
+    --color-background: #090909;
+    --color-surface: #111111;
+
+    --color-gold-light: #D2B48C;
+    --color-gold: #B08D57;
+    --color-gold-dark: #8C6A43;
+
+    --color-text: #F5F5F5;
+    --color-text-secondary: #b7b7b7;
+
+    /*fontes*/
+
+    --font-title: "Cormorant Garamond", serif;
+    --font-body: "Montserrat", sans-serif;
+
+    /*containers*/
+
+    --container-width: 1200px;
+
+    --section-padding: 120px;
+}
