@@ -1,0 +1,65 @@
+.hero {
+
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/images/fundo_hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__overlay {
+
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero__content {
+
+    padding-top: 120px;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero__subtitle {
+
+    display: block;
+    margin-bottom: 20px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+}
+
+.hero__title {
+
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 0.95;
+    margin-bottom: 60px;
+}
+
+.hero__title span {
+
+    display: block;
+}
+
+.hero__button {
+
+    display: inline-block;
+    padding: 16px 32px;
+    border: 1px solid var(--color-gold);
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.hero__button:hover {
+
+    background: var(--color-gold);
+    color: var(--color-background);
+}
