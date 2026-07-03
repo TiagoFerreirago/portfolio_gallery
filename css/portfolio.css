@@ -107,5 +107,12 @@
   display: inline-block;
   margin-bottom: 10px;
 }
-
-
+.portfolio__content h3::after {
+  content: "";
+  display: block;
+  width: 40px;            /* largura da linha */
+  height: 3px;            /* espessura */
+  background-color: white;/* cor da linha */
+  margin: 6px auto 0;     /* centraliza e dá espaço */
+  border-radius: 2px;     /* cantos arredondados */
+}

@@ -63,3 +63,8 @@
     background-color: var(--color-gold);
     color: var(--color-background);
 }
+
+.section-header__title {
+
+    text-transform: uppercase;
+    letter-spacing: 2px;}
