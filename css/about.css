@@ -1,1 +1,131 @@
+.about {
+
+    background-color: var(--color-surface-gold);
+}
+
+.about__content {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "image text" "image skills" "image button";
+    align-items: start;
+    gap: 20px;
+}
+
+.section-about__title {
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.section-about__title::after {
+
+    content: "";
+    display: block;
+    border: 1px solid var(--color-gold);
+    height: 0.5px;
+    width: 60px;
+    background-color: var(--color-gold-light);
+    border-radius: 2px;
+}
+
+.about__image {
+
+    grid-area: image;
+}
+
+.about__image img {
+
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 8px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.about__text {
+
+    grid-area: text;
+}
+
+.about__text p {
+
+    margin-top: 20px;
+    color: var(--color-text-secondary);
+
+}
+
+.about__skills {
+
+    display: flex;         
+    gap: 135px;              
+    justify-content: center; 
+    align-items: center;    
+       
+}
+
+.about__button {
+
+    grid-area: button;
+    display: inline-block;
+    border: 1px solid var(--color-gold);
+    padding: 12px 24px;
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+    max-width: 265px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.about__button:hover {
+
+    background-color: var(--color-gold);
+    color: var(--color-background);
+}
+
+.persona__skills img {
+
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    max-width: 50px;
+    background: linear-gradient(45deg, var(--color-gold), var(--color-background));
+    -webkit-text-fill-color: transparent;
+}
+
+.persona__skills {
+
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.about__skills-text {
+
+    color: var(--color-gold-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px
+}
+
+.about__skills-subtitle {
+
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+
+
 
