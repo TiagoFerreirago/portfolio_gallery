@@ -19,14 +19,23 @@
 
     display: flex;
     gap: 30px;
+   
 }
 
 .header__menu a {
 
     color: var(--color-text);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+   
+}
+
+.header__menu a:hover {
+
+    color: var(--color-background);
+    background-color: var(--color-gold);
+
 }
 
 .header__logo {
@@ -56,6 +65,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.3s;
+    font-size: 14px;
 }
 
 .header__button:hover {
@@ -67,4 +77,5 @@
 .section-header__title {
 
     text-transform: uppercase;
-    letter-spacing: 2px;}
+    letter-spacing: 2px;
+}
