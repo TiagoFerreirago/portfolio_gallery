@@ -1,0 +1,61 @@
+@media (max-width: 1200px) {
+
+
+    /*.header__nav {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero__title {
+
+        font-size: 4rem;
+    }*/
+
+    .contact__content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        grid-template-areas: "title links" "button button";
+
+    }
+    .contact__title {
+        
+        grid-area: title; 
+    
+    }
+
+    .contact__links {
+        
+        grid-area: links; 
+    
+    }
+
+    .contact__button {
+        justify-content: center; 
+        grid-area: button;
+    }
+
+    
+}
+
+
+@media (max-width: 768px) {
+
+   /* .header__menu {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 16px;
+
+    }
+
+    .hero__title {
+
+        font-size: 2.8rem;
+    }*/
+
+
+
+}
