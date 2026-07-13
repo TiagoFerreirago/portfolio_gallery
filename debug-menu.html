@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debug Menu</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #111; color: #fff; }
+    .header { padding: 20px; }
+    .header__nav { display: flex; align-items: center; justify-content: space-between; position: relative; }
+    .header__menu { display: none; flex-direction: column; gap: 12px; position: absolute; top: 100%; left: 0; right: 0; background: #222; padding: 16px; }
+    .header__menu.active { display: flex; }
+    .header__toggle { display: flex; flex-direction: column; gap: 4px; background: transparent; border: 0; }
+    .header__toggle span { width: 24px; height: 2px; background: white; display: block; }
+    @media (max-width: 768px) {
+      .header__toggle { display: flex; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <button class="header__toggle" type="button" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <script>
+    document.querySelector('.header__toggle').addEventListener('click', () => {
+      document.querySelector('.header__menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
