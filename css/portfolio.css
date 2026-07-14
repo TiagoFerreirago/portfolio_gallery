@@ -108,4 +108,16 @@
   margin-bottom: 10px;
 }
 
+.portfolio__pagination {
+
+    display: none;
+
+}
+
+.portfolio__dot.active {
+
+    width: 24px;
+    border-radius: 20px;
+}
+
 

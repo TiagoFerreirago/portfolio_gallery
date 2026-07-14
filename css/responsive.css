@@ -55,7 +55,13 @@
     .header__button {
         display: none;
     }
-    
+    /*-------------------------------------------*/
+
+    .portfolio__grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*-------------------------------------------*/
     .contact__content {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
@@ -112,5 +118,63 @@
         padding: 14px 24px;
         font-size: 0.8rem;
     }
+
+    .portfolio__grid {
+
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .portfolio__grid::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+    .portfolio__card {
+
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+    }
+
+    .portfolio__pagination {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 10px;
+
+        margin-top: 20px;
+
+    }
+
+    .portfolio__dot {
+
+        width: 10px;
+
+        height: 10px;
+
+        border-radius: 50%;
+
+        background-color: rgba(255,255,255,0.3);
+
+        transition: all 0.3s ease;
+
+    }
+
+    .portfolio__dot.active {
+
+        background-color: var(--color-gold);
+
+        transform: scale(1.2);
+
+    }   
 
 }

@@ -18,3 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+const portfolioGrid = document.querySelector('.portfolio__grid');
+
+const dots = document.querySelectorAll('.portfolio__dot');
+
+if (portfolioGrid && dots.length) {
+
+    portfolioGrid.addEventListener('scroll', () => {
+
+        const cardWidth = portfolioGrid.querySelector('.portfolio__card').offsetWidth;
+
+        const index = Math.round(
+            portfolioGrid.scrollLeft / (cardWidth + 16)
+        );
+
+        dots.forEach(dot => {
+
+            dot.classList.remove('active');
+
+        });
+
+        if (dots[index]) {
+
+            dots[index].classList.add('active');
+
+        }
+
+    });
+
+}
