@@ -48,3 +48,34 @@ if (portfolioGrid && dots.length) {
     });
 
 }
+
+const testimonialsGrid = document.querySelector('.testimonials__grid');
+
+const testimonialDots = document.querySelectorAll('.testimonials__dot');
+
+if (testimonialsGrid && testimonialDots.length) {
+
+    testimonialsGrid.addEventListener('scroll', () => {
+
+        const cardWidth =
+            testimonialsGrid.querySelector('.testimonial').offsetWidth;
+
+        const index = Math.round(
+            testimonialsGrid.scrollLeft / (cardWidth + 20)
+        );
+
+        testimonialDots.forEach(dot => {
+
+            dot.classList.remove('active');
+
+        });
+
+        if (testimonialDots[index]) {
+
+            testimonialDots[index].classList.add('active');
+
+        }
+
+    });
+
+}

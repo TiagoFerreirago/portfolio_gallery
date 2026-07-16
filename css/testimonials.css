@@ -54,3 +54,8 @@
     border-radius: 2px;    
     margin-bottom: 15px;
 }
+
+.testimonial__pagination {
+
+    display: none;
+}
