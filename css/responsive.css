@@ -147,6 +147,18 @@
         grid-area: button;
     }
 
+    .gallery-page .header__nav {
+
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .gallery-page .header__logo {
+
+        margin-right: 0;
+        padding: 0;
+    }
+
     
 }
 
@@ -274,7 +286,6 @@
     .testimonial__author {
 
         margin-left: 0;
-
         margin-top: 20px;
 
     }
@@ -326,8 +337,8 @@
 
     .section-about__title::after {
 
-        margin-left: 120px;
-        margin-top: 12px;
+        margin-left: 77px;
+        margin-top: 8px;
     }
 
     .about__text p {
@@ -442,6 +453,33 @@
 
     }
 
+     .gallery-page .header__nav {
 
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .gallery-page .header__logo {
+
+        margin-right: 0;
+        padding: 0;
+    }
+
+   .gallery-hero__description {
+
+        font-size: 0.8rem;
+        line-height: 1.4;
+        max-width: 100%;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .gallery-showcase__grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
