@@ -171,6 +171,11 @@
         padding: 0;
     }
 
+    .section-header__title {
+
+        font-size: 2rem;
+    }
+
     
 }
 
